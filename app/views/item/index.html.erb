@@ -4,7 +4,10 @@
 <ol>
 <% @items.each do |item| %>
 	<li>
+	<%= image_tag item.avatar.url(:thumb) %>
 	<%=link_to item.name, "items/#{item.id}" %>
 	</li>
 <% end %>
 </ol>
+
+<%=link_to "New Item", "items/new" %>
