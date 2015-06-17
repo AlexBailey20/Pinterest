@@ -8,5 +8,4 @@ class User < ActiveRecord::Base
 
 	validates(:name, :presence => true)
 	validates(:user_name, :presence => true)
-	validates(:money, :presence => true)
 end

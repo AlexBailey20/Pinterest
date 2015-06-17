@@ -4,3 +4,6 @@
 <%= image_tag @item.avatar.url(:medium) %><br />
 <%= @item.description %>
 </p>
+
+<%= if user_signed_in? %>
+<% end %>
