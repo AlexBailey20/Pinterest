@@ -10,6 +10,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+<div class="container">
+
 <header>
 <%= link_to "Items" , "/items" %>
 <%= link_to "Users" , "/users" %>
@@ -23,6 +26,6 @@
  <% end %>
 </header>
 <%= yield %>
-
+</div>
 </body>
 </html>
