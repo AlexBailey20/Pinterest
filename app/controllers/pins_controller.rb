@@ -1,7 +1,7 @@
 class PinsController < ApplicationController
 	def create
-		@pin = Pin.new
-		@pin.user_id = current_user.id
-		@pin.item_id = Item.find(params[:id]).id
+		@pin = Pin.new(:user_id => params[:user_id], :item_id => params[:item_id])
+		@pin.save
+		redirect_to '/items'
 	end
 end
